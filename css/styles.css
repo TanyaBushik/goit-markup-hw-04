@@ -15,6 +15,22 @@
 /* header + footer background 2F303A */
 /* h1 FFFFFF */
 
+p, h1, h2, h3, h4, h5, h6 {
+margin: 0px;
+}
+
+ul {
+margin: 0px;
+padding-left: 0px;
+}
+
+button {
+  cursor: pointer;
+}
+ img {
+display: block;
+  }
+
  body {
   font-family: "Roboto", sans-serif;
   background-color: var(--main-background-color);
@@ -25,6 +41,13 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
  }
+
+ /*----------Universal classes-------*/
+.container {
+  width: 1630px;
+  padding: 0px  15px;
+  margin: 0px auto;
+}
 
  /* ---- Universal -----*/
 .link {
@@ -47,6 +70,9 @@
 }
 
 /*------- HEADER -----*/
+.header {
+padding: 32px;
+}
 
 .header-logo {
 font-family: 'Raleway', sans-serif;
@@ -56,6 +82,7 @@ line-height: 1.2;
 letter-spacing: 0.03em;
 color: var(--accent-blue);
 }
+
 .header-accent {
   color: var(--secondary-text-color);
 }
@@ -94,7 +121,13 @@ color: var(--primary-text-color);
 /*------HERO---------------*/
 .hero {
   background-color: var(--hero-background-color);
+  padding: 200px 452px;
+  margin-bottom: 94px;
 }
+.hero-box {
+  
+}
+
 .hero-title {
 font-weight: 900;
 font-size: 44px;
@@ -103,6 +136,9 @@ text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
 color: var(--main-background-color);
+max-width: 700px;
+margin-bottom: 30px;
+text-align: center;
 }
 
 .hero-btn {
@@ -116,7 +152,9 @@ color: var(--main-background-color);
 background-color: var(--accent-blue);
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
-cursor: pointer;
+display: block;
+margin: 0px auto;
+margin-top: 30px;
 }
 
 .hero-btn:hover,
@@ -126,9 +164,15 @@ background: #188CE8;
 }
 
 /*-----------ABOUT-------*/
+.about {
+  margin-bottom: 94px;
+}
+
 .about-name {
+
 }
 .about-list {
+  margin-bottom: 9.4px;
 }
 .about-title {
 line-height: 1.14;
@@ -145,9 +189,14 @@ text-align: center;
 color: var(--secondary-text-color);
 }
 
+.work-title {
+  margin-bottom: 50px;
+}
+
 /*-----------COMMAND-----------*/
 .command {
   background-color: var(--section-background-color);
+  padding: 94px 215px;
 }
 .command-name {
 font-weight: 500;
@@ -167,7 +216,9 @@ text-align: center;
 footer {
 background-color: var(--hero-background-color);
 }
-
+.footer {
+  padding: 60px 0;
+}
 .footer-header-logo {
 font-family: 'Raleway', sans-serif;
 font-weight: 700;
@@ -196,6 +247,9 @@ color: var(--main-background-color);
 /*-----------PORTFOLIO--------*/
 /*-----------PORTFOLIO_ABOUT--------*/
 
+.container nav {
+margin-bottom: 34px;
+}
 .navidation-btn {
 font-family: inherit;
 font-size: 16px;
@@ -231,4 +285,8 @@ letter-spacing: 0.03em;
 .contacts-email:hover,
 .contacts-email:focus {
 color: var(--accent-blue);
+}
+
+.portfolio-list {
+  margin-bottom: 94px;
 }
