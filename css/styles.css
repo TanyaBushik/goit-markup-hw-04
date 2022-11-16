@@ -5,6 +5,7 @@
     --section-background-color: #F5F4FA;
     --accent-blue: #2196F3;
     --hero-background-color:#2F303A;
+    --main-margin:215px
     }
 
 /* secondary text color 212121 */
@@ -71,10 +72,18 @@ display: block;
 
 /*------- HEADER -----*/
 .header {
-padding: 32px;
+padding: 25px var(--main-margin);
+}
+
+.container-header {
+display: flex;
+align-items: center;
 }
 
 .header-logo {
+display: flex;
+align-items: center;
+
 font-family: 'Raleway', sans-serif;
 font-weight: 700;
 font-size: 26px;
@@ -85,9 +94,25 @@ color: var(--accent-blue);
 
 .header-accent {
   color: var(--secondary-text-color);
+  margin-right: 97px;
 }
 
+.header-nav {
+  display: flex;
+}
+.header-list, .item {
+  display: flex;
+}
+
+.header-list .item + .item {
+margin-left: 50px;
+}
+
+
 .header-link {
+padding-top: 30px;
+padding-bottom: 30px;
+
 font-weight: 500;
 line-height: 1.14;
 letter-spacing: 0.02em;
@@ -105,8 +130,18 @@ color: var(--secondary-text-color);
   color: var(--accent-blue);
 }
 
+.header-contacts {
+  display: flex;
+margin-left: auto;
+}
+
+.header-contacts .item +.item {
+  margin-left: 50px;
+}
+
 .header-email,
 .header-tel {
+font-weight: 500;
 line-height: 1.14;
 letter-spacing: 0.02em;
 color: var(--primary-text-color);
@@ -118,17 +153,25 @@ color: var(--primary-text-color);
   color: var(--accent-blue);
 }
 
+.header-email {
+margin-right: 50px;
+}
 /*------HERO---------------*/
 .hero {
-  background-color: var(--hero-background-color);
-  padding: 200px 452px;
-  margin-bottom: 94px;
+padding: 200px 452px;
+margin-bottom: 94px;
+
+background-color: var(--hero-background-color);
 }
 .hero-box {
   
 }
 
 .hero-title {
+max-width: 700px;
+margin-bottom: 30px;
+text-align: center;
+
 font-weight: 900;
 font-size: 44px;
 line-height: 1.36;
@@ -136,12 +179,14 @@ text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
 color: var(--main-background-color);
-max-width: 700px;
-margin-bottom: 30px;
-text-align: center;
+
 }
 
 .hero-btn {
+display: block;
+margin: 0px auto;
+margin-top: 30px;
+
 font-family: inherit;
 font-weight: 700;
 font-size: 16px;
@@ -152,9 +197,6 @@ color: var(--main-background-color);
 background-color: var(--accent-blue);
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
-display: block;
-margin: 0px auto;
-margin-top: 30px;
 }
 
 .hero-btn:hover,
@@ -181,6 +223,9 @@ color: var(--secondary-text-color);
 
 
 /*-----------WORK-------*/
+.work{
+ padding: 94px var(--main-margin);
+}
 .work-title,
 .command-title  {
 font-size: 36px;
@@ -195,8 +240,9 @@ color: var(--secondary-text-color);
 
 /*-----------COMMAND-----------*/
 .command {
-  background-color: var(--section-background-color);
-  padding: 94px 215px;
+padding: 94px var(--main-margin);
+
+background-color: var(--section-background-color);
 }
 .command-name {
 font-weight: 500;
@@ -247,9 +293,7 @@ color: var(--main-background-color);
 /*-----------PORTFOLIO--------*/
 /*-----------PORTFOLIO_ABOUT--------*/
 
-.container nav {
-margin-bottom: 34px;
-}
+
 .navidation-btn {
 font-family: inherit;
 font-size: 16px;
