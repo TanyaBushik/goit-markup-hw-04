@@ -81,6 +81,7 @@ flex-basis: 1170px;
 padding: 0px;
 margin-right: var(--main-margin);
 margin-left: var(--main-margin);
+margin-bottom: 94px;
 }
 
 .header-logo {
@@ -298,6 +299,7 @@ color: var(--main-background-color);
  display: flex;
  justify-content: center;
  margin-bottom: 34px;
+ max-height: 54px;
  outline: 2px solid aqua;
 }
 
@@ -305,8 +307,6 @@ color: var(--main-background-color);
   display: flex;
   margin-left: var(--main-margin);
   margin-right: var(--main-margin);
-  margin-bottom: 50px;
-  margin-top: 94px;
   gap: 8px;
 }
 
