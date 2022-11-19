@@ -5,7 +5,8 @@
     --section-background-color: #F5F4FA;
     --accent-blue: #2196F3;
     --hero-background-color:#2F303A;
-    --main-margin:215px
+    --main-margin: 215px;
+    --margin-between-items: 30px;
     }
 
 /* secondary text color 212121 */
@@ -76,7 +77,6 @@ display: block;
 /*------- HEADER -----*/
 .header {
 border-bottom: 1px solid #ECECEC;;
-position: absolute;
 width: 1600px;
 height: 80px;
 background-color: var(--main-background-color);
@@ -122,8 +122,8 @@ margin-left: 50px;
 }
 
 .header-link {
-padding-top: 30px;
-padding-bottom: 30px;
+padding-top: var(--margin-between-items);
+padding-bottom: var(--margin-between-items);
 
 font-weight: 500;
 line-height: 1.14;
@@ -160,13 +160,20 @@ color: var(--primary-text-color);
 }
 
 .header-email:hover,
-.header-email:active,
+.header-email:active
 .header-email:focus {
+color: var(--accent-blue);
+}
+
+.header-tel:hover,
+.header-tel:active,
+.header-tel:focus {
   color: var(--accent-blue);
 }
 
 .header-email {
 margin-right: 50px;
+color: var(--primary-text-color);
 }
 
 
@@ -186,7 +193,7 @@ text-align: center;
 .hero-title {
 max-width: 696px;
 margin: 0 auto;
-margin-bottom: 30px;
+margin-bottom: var(--margin-between-items);
 
 font-weight: 900;
 font-size: 44px;
@@ -237,7 +244,7 @@ color: var(--secondary-text-color);
 }
 
 .about-item:not(:last-child) {
-margin-right: 30px;
+margin-right: var(--margin-between-items);
 }
 
 
@@ -249,7 +256,7 @@ margin-right: 30px;
   display: flex;
 }
 .work-item:not(:last-child) {
-  margin-right: 30px;
+  margin-right: var(--margin-between-items);
 }
 .work-title,
 .command-title  {
@@ -275,7 +282,7 @@ background-color: var(--section-background-color);
   display: flex;
 }
 .command-item:not(:last-child) {
-margin-right: 30px;
+margin-right: var(--margin-between-items);
 }
 .command-name {
 font-weight: 500;
@@ -283,7 +290,7 @@ font-size: 16px;
 line-height: 1.18;
 text-align: center;
 color: var(--secondary-text-color);
-padding-top: 30px;
+padding-top: var(--margin-between-items);
 padding-bottom: 10px;
 }
 
@@ -291,7 +298,7 @@ padding-bottom: 10px;
 font-size: 16px;
 line-height: 1.18;
 text-align: center;
-padding-bottom: 30px;
+padding-bottom: var(--margin-between-items);
 }
 .commnad-wrap {
 border: 1px solid #EEEEEE;
@@ -365,7 +372,9 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
 border-radius: 4px;
 }
 
-
+.container-about {
+  margin-bottom: 50px;
+}
 
 /*-----------PORTFOLIO_WORKS--------*/
 
@@ -378,8 +387,8 @@ border-radius: 4px;
 
 .portfolio-item {
 width: calc((100% - 60px)/3);
-margin-right: 30px;
-margin-bottom: 30px;
+margin-right: var(--margin-between-items);
+margin-bottom: var(--margin-between-items);
 display: inline-block;
 }
 
