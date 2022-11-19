@@ -44,7 +44,7 @@ display: block;
  }
 
  /*----------Universal classes-------*/
- .section {
+ section {
   padding-top: 94px;
   padding-bottom: 94px;
  }
@@ -282,12 +282,15 @@ font-size: 16px;
 line-height: 1.18;
 text-align: center;
 color: var(--secondary-text-color);
+padding-top: 30px;
+padding-bottom: 10px;
 }
 
 .command-position {
 font-size: 16px;
 line-height: 1.18;
 text-align: center;
+padding-bottom: 30px;
 }
 .commnad-wrap {
 border: 1px solid #EEEEEE;
