@@ -85,7 +85,6 @@ border-bottom: var(--border-bottom)
 .container-header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .header-nav {
@@ -125,6 +124,8 @@ color: var(--secondary-text-color);
 
 .header-contacts {
  display: flex;
+ margin-left: auto;
+
 }
 
 .header-contacts .item + .item {
@@ -171,7 +172,8 @@ color: var(--primary-text-color);
 
 /*------HERO---------------*/
 .hero-section {
-padding-top: 200px 0;
+padding-top: 200px;
+padding-bottom: 200px;
 margin-left: auto;
 margin-right: auto;
 background-color: var(--hero-background-color);
@@ -206,6 +208,7 @@ color: var(--main-background-color);
 background-color: var(--accent-blue);
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
+border: none;
 
 padding: 10px 32px;
 display:block;
@@ -221,16 +224,13 @@ background: #188CE8;
 
 /*-----------ABOUT-------*/
 
-.about-name {
-
-}
-
 .about-list {
 display: flex;
-margin-bottom: 9.4px;
 }
 
 .about-title {
+margin-bottom: 10px;
+
 line-height: 1.14;
 color: var(--secondary-text-color);
 }
@@ -266,6 +266,10 @@ color: var(--secondary-text-color);
 .command-section {
 background-color: var(--section-background-color);
 }
+.command-img {
+background: url(4853.jpg);
+border-radius: 0px;
+}
 .command-title{
   margin-bottom: 50px;
 }
@@ -273,6 +277,13 @@ background-color: var(--section-background-color);
 .command-list {
   display: flex;
 }
+
+.command-item {
+  background: #FFFFFF;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+}
+
 .command-item:not(:last-child) {
 margin-right: var(--margin-between-items);
 }
@@ -282,7 +293,6 @@ font-size: 16px;
 line-height: 1.18;
 text-align: center;
 color: var(--secondary-text-color);
-padding-top: var(--margin-between-items);
 padding-bottom: 10px;
 }
 
@@ -292,17 +302,18 @@ line-height: 1.18;
 text-align: center;
 padding-bottom: var(--margin-between-items);
 }
-.commnad-wrap {
-border: 1px solid #EEEEEE;
+
+.command-wrap {
+ margin-top: var(--margin-between-items);
+border-bottom: 1px solid #EEEEEE;
 }
 
 /* ------CONTACTS------*/
 footer {
 background-color: var(--hero-background-color);
+padding: 60px 0;
 }
-.footer {
-  padding: 60px 0;
-}
+
 .footer-header-logo {
 font-family: 'Raleway', sans-serif;
 font-weight: 700;
@@ -316,6 +327,7 @@ color: var(--main-background-color);
 }
 .contacts {
 font-style: normal;
+margin-top: 20px;
 }
 
 .contacts-email,
@@ -328,23 +340,24 @@ color: rgba(255, 255, 255, 0.6);
 color: var(--main-background-color);
 }
 
+.contacts-item:not(:last-child) {
+margin-bottom: 9px;
+}
 /*-----------PORTFOLIO--------*/
 /*-----------PORTFOLIO_ABOUT--------*/
 
-.container-about .navidation-list {
+.navidation-list {
  display: flex;
  justify-content: center;
+ padding-bottom: 50px
  /*margin-bottom: 34px;
  max-height: 54px;*/
  }
- .navidation-item {
-  margin-right: 8px;
+
+ .navidation-list .navidation-item + .navidation-item {
+  margin-left: 8px;
  }
-
-.navidation-item:not(:last-chils) {
-margin-right: 8px;
-}
-
+ 
 .navidation-btn {
 font-family: inherit;
 font-size: 16px;
@@ -353,6 +366,7 @@ color: var(--secondary-text-color);
 cursor: pointer;
 background: #F5F4FA;
 border-radius: 4px;
+border: none;
 }
 
 .navidation-btn:hover,
@@ -376,16 +390,17 @@ border-radius: 4px;
 }
 
 
-
 .portfolio-item {
 width: calc((100% - 60px)/3);
 margin-right: var(--margin-between-items);
 margin-bottom: var(--margin-between-items);
-display: inline-block;
 }
 
 .portfolio-item:nth-child(3n) {
 margin-right: 0px;
+}
+.portfolio-item:nth-last-child(-n + 3) {
+margin-bottom: 0;
 }
 
 /* .container-portfolio {
@@ -413,22 +428,21 @@ font-size: 18px;
 line-height: 2;
 letter-spacing: 0.06em;
 color: var(--secondary-text-color);
-margin-left: 24px;
-margin-top: 20px;
+margin-bottom: 4px;
 }
 
 .portfolio-name {
 font-size: 16px;
 line-height: 1.88;
 letter-spacing: 0.03em;
-margin-left: 24px;
-
 }
 
 .portfol-wrap {
-border: 1px solid #EEEEEE;
+padding: 20px 24px;
+border-left: 1px solid #EEEEEE;
+border-bottom: 1px solid #EEEEEE;
+border-right: 1px solid #EEEEEE;
 width: 370px;
-height: 110px;
 }
 
 /*--Footer--*/
