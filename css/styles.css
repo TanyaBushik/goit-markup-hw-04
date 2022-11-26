@@ -158,19 +158,34 @@ color: var(--primary-text-color);
   color: var(--accent-blue);
 }
 
-
 .header-email:hover,
-.header-email:active,
 .header-email:focus {
   color: var(--accent-blue);
 }
 
 .header-tel:hover,
-.header-tel:active
 .header-tel:focus  {
  color: var(--accent-blue);
 }
 
+.header-email,
+.header-tel {
+ content: "";
+  justify-content: center;
+  align-items: center;
+
+  font-weight: 500;
+  color: var(--primary-text-color);
+}
+
+.header-icon:hover
+.header-icon:focus {
+  color: var(--accent-blue);
+}
+.header-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
 
 /*------HERO---------------*/
 .hero-section {
@@ -200,14 +215,12 @@ margin-bottom: var(--margin-between-items);
 max-width: 696px;
 margin: 0 auto;
 
-
 font-weight: 900;
 font-size: 44px;
 line-height: 1.36;
 letter-spacing: 0.06em;
 text-transform: uppercase;
 color: var(--main-background-color);
-
 }
 
 .hero-btn {
@@ -250,7 +263,60 @@ color: var(--secondary-text-color);
 .about-item:not(:last-child) {
 margin-right: var(--margin-between-items);
 }
+.about-icon {
+ display: flex;
+ content: "";
+ align-content: center;
+ justify-content: center;
+ width: 270px;
+ height: 120px;
+ background-color: var(--section-background-color);
+ margin-bottom: 30px;
+}
 
+.antena-icon {
+  width: 65px;
+}
+.clock-icon {
+width: 67px;
+}
+.diagram-icon {
+width: 70px;
+}
+.astronaut-icon {
+width: 55px;
+}
+
+/*align-items: center;
+  justify-content: center;
+
+.about-item::before {
+  display: block;
+  content: "";
+  height: 120px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--section-background-color);
+  margin-bottom: 30px;
+}
+width="65" heigh="70
+.antena-icon::before {
+  background-image: url(../img/antenna.svg);
+  background-size: 65px 70px;
+}
+.clock-icon::before {
+  background-image: url(../img/clock.svg);
+   background-size:  67px 70px;
+}
+.diagram-icon::before {
+  background-image: url(../img/diagram.svg);
+  background-size: 70px 54px;
+}
+.autronaut-icon::before {
+background-image: url(../img/astronaut.svg);
+  background-size: 55px 61px;
+}*/
 
 /*-----------WORK-------*/
 .no-padding {
@@ -278,7 +344,7 @@ color: var(--secondary-text-color);
 .command-section {
 background-color: var(--section-background-color);
 }
-.footer-img {
+.command-img {
 background: url(4853.jpg);
 border-radius: 0px;
 }
@@ -312,15 +378,15 @@ color: var(--secondary-text-color);
 }
 
 .command-position {
-padding-bottom: var(--margin-between-items);
+/*padding-bottom: var(--margin-between-items);*/
 font-size: 16px;
 line-height: 1.18;
 text-align: center;
 }
 
 .command-wrap {
- padding: 20px 24px;
- margin-bottom: 16px;
+/* padding: 20px 24px;
+ margin-bottom: 16px;*/
 
 }
 .command-soc-list {
@@ -355,6 +421,33 @@ color: #afb1b8;
 .command-soc-icons {
   fill: currentColor;
 }
+
+/*-------------Clients-------*/
+.client-title {
+  margin-bottom: 50px;
+}
+.client-list {
+  display: flex;
+justify-content: center;
+}
+.client-link {
+    display: flex;
+    max-width: 1170px;
+    height: 100%;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    color: var(--primary-text-color);
+    align-content: center;
+}
+.client-icon {
+  color: var(--primary-text-color);
+}
+
+.client-item:not(:last-child) {
+margin-right: var(--margin-between-items);
+}
+
+
 
 /* ------CONTACTS------*/
 footer {
