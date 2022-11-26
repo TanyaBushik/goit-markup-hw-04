@@ -497,6 +497,8 @@ margin-bottom: 9px;
 }
 .footer-icons {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .footer-soc-text {
   display: inline-flex;
