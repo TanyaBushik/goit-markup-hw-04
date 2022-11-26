@@ -432,21 +432,32 @@ justify-content: center;
 }
 .client-link {
     display: flex;
-    max-width: 1170px;
+    max-width: 100%;
     height: 100%;
+    align-items: center;
+    justify-content: center;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
-    color: var(--primary-text-color);
-    align-content: center;
+    fill: var(--primary-text-color);
+}
+.client-item {
+  width: 170px;
+  height: 92px;
 }
 .client-icon {
   color: var(--primary-text-color);
 }
-
 .client-item:not(:last-child) {
 margin-right: var(--margin-between-items);
 }
 
+.client-item:focus,
+.client-item:hover,
+.client-link:focus,
+.client-link:hover {
+  fill: var(--accent-blue);
+  border-color: var(--accent-blue);
+}
 
 
 /* ------CONTACTS------*/
@@ -484,7 +495,9 @@ color: var(--main-background-color);
 .contacts-item:not(:last-child) {
 margin-bottom: 9px;
 }
-
+.footer-icons {
+  display: flex;
+}
 .footer-soc-text {
   display: inline-flex;
   justify-content: center;
