@@ -465,6 +465,21 @@ footer {
 background-color: var(--hero-background-color);
 padding: 60px 0;
 }
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+.footer-adress {
+  display: inline-block;
+  flex-direction: column;
+  max-width: 240px;
+  margin-left: 0;
+  margin-right: 70px;
+}
+.footer-icons {
+  display: inline-block;
+  flex-direction: column;
+}
 
 .footer-header-logo {
 font-family: 'Raleway', sans-serif;
@@ -495,22 +510,15 @@ color: var(--main-background-color);
 .contacts-item:not(:last-child) {
 margin-bottom: 9px;
 }
-.footer-icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 .footer-soc-text {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
 font-weight: 700;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--main-background-color);
-
+padding-left: 24px;
 }
 
 .footer-soc-list {
@@ -535,6 +543,7 @@ margin-right: 10px;
   height: 100%;
 border-radius: 50%;
 color: #afb1b8;
+background-color:rgba(255, 255, 255, 0.1);;
 }
 
 .footer-soc-link:hover {
@@ -605,6 +614,10 @@ margin-right: 0px;
 margin-bottom: 0;
 }
 
+.portfolio-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+  0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .portfolio-title {
 font-weight: 700;
 font-size: 18px;
