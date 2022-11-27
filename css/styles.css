@@ -183,9 +183,14 @@ color: var(--primary-text-color);
   color: var(--accent-blue);
 }
 .header-icon {
+  display: inline-flex;
   margin-right: 10px;
   fill: currentColor;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
+
 
 /*------HERO---------------*/
 .hero-section {
@@ -272,6 +277,7 @@ margin-right: var(--margin-between-items);
  height: 120px;
  background-color: var(--section-background-color);
  margin-bottom: 30px;
+ border-radius: 4px;
 }
 
 .antena-icon {
@@ -329,7 +335,9 @@ background-image: url(../img/astronaut.svg);
   margin-right: var(--margin-between-items);
 }
 .work-title,
-.footer-title  {
+.footer-title,
+.command-title,
+.client-title  {
 font-size: 36px;
 line-height: 1.16;
 text-align: center;
@@ -393,7 +401,7 @@ text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
- padding: 20px 24px; 
+ margin: 20px 24px; 
 }
 
 .command-soc-item {
@@ -438,7 +446,7 @@ justify-content: center;
     justify-content: center;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
-    fill: var(--primary-text-color);
+    fill: #AFB1B8;
 }
 .client-item {
   width: 170px;
@@ -477,8 +485,6 @@ padding: 60px 0;
   margin-right: 70px;
 }
 .footer-icons {
-  display: inline-block;
-  flex-direction: column;
 }
 
 .footer-header-logo {
@@ -518,14 +524,13 @@ line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--main-background-color);
-padding-left: 24px;
+margin-bottom: 20px;
 }
 
 .footer-soc-list {
   display: flex;
   justify-content: center;
   align-items: center;
- padding: 20px 24px; 
 }
 
 .footer-soc-item {
@@ -614,7 +619,8 @@ margin-right: 0px;
 margin-bottom: 0;
 }
 
-.portfolio-item:hover {
+.portfolio-link.link:hover,
+.portfolio-link.link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
   0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
