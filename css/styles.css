@@ -618,6 +618,9 @@ margin-right: 0px;
 .portfolio-item:nth-last-child(-n + 3) {
 margin-bottom: 0;
 }
+.portfolio-link {
+  display: block;
+}
 
 .portfolio-link.link:hover,
 .portfolio-link.link:focus {
@@ -637,6 +640,7 @@ margin-bottom: 4px;
 font-size: 16px;
 line-height: 1.88;
 letter-spacing: 0.03em;
+color: var(--primary-text-color)
 }
 
 .portfol-wrap {
